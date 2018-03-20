@@ -49,6 +49,7 @@ mongodb_repo:
 mongodb_package:
   pkg.installed:
     - name: {{ mdb.mongodb_package }}
+    - skip_verify: True
 
 mongodb_log_path:
   file.directory:
