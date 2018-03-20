@@ -13,6 +13,7 @@ mongos_package:
 {%- endif %}
   pkg.installed:
     - name: {{ ms.mongos_package }}
+    - skip_verify: True
 
 mongos_user:
   user.present:
